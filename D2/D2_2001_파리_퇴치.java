@@ -9,7 +9,7 @@ package D2;
 
 import java.util.Scanner;
 
-public class D_2001_파리_퇴치 {
+public class D2_2001_파리_퇴치 {
     static int N;
     static int M;
     static int map[][];
