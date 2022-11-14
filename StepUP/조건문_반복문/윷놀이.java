@@ -1,4 +1,4 @@
-package StepUP;
+package StepUP.조건문_반복문;
 
 /*
 배와 등의 합을 구해 값을 비교하여 윷을 판별하였다.

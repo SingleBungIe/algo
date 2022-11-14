@@ -1,4 +1,4 @@
-package StepUP;
+package StepUP.조건문_반복문;
 /*
  Math.max() 함수를 활용하면 쉽게 비교 할 수 있다.
  */

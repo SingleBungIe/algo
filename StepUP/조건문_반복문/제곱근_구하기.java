@@ -1,4 +1,4 @@
-package StepUP;
+package StepUP.조건문_반복문;
 
 import java.util.Scanner;
 

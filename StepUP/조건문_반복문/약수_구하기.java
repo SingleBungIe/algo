@@ -1,4 +1,4 @@
-package StepUP;
+package StepUP.조건문_반복문;
 
 /*
  반복문을 활용해 1부터 N까지 약수가 있을 때마다 카운터를 증가시키고
