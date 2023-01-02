@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class 숫자_개수_세기 {
-    static int n,m;
+    static int n, m;
     static int data[];
 
     public static void main(String[] args) {
