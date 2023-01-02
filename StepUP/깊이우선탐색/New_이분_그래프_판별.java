@@ -3,43 +3,44 @@ package StepUP.깊이우선탐색;
 import java.util.Scanner;
 
 public class New_이분_그래프_판별 {
-    static int N; // 정점 개수
-    static int M; // 간선 개수
+
+    static int group[];
+    static int N;
+    static String result = "Yes";
     static boolean adjMatrix[][];
-    static char visited[];
-    static String result = "YES";
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
-        M = sc.nextInt();
+        int M = sc.nextInt();
         adjMatrix = new boolean[N + 1][N + 1];
-        visited = new char[N + 1];
-        for (int i = 1; i < M; i++) {
+        group = new int[N + 1];
+        for (int i = 0; i < M; i++) {
             int from = sc.nextInt();
             int to = sc.nextInt();
             adjMatrix[from][to] = adjMatrix[to][from] = true;
         }
-        dfs(1, true);
+        DFS(1, true);
         System.out.println(result);
+
     }
 
-    private static void dfs(int currenrt, boolean AorB) {
+    private static void DFS(int current, boolean AorB) {
         if (AorB)
-            visited[currenrt] = 'A';
+            group[current] = 1; //groupA
         else
-            visited[currenrt] = 'B';
-//        System.out.println();
+            group[current] = 2; //groupB
 
         for (int i = 1; i <= N; i++) {
-            if (adjMatrix[currenrt][i])
-                if (visited[i] == visited[currenrt]) {
-                    result = "NO";
+            if (adjMatrix[current][i]) {
+                if (group[i] == 0)
+                    DFS(i, !AorB);
+                else if (group[i] == group[current]) {
+                    result = "No";
                     return;
-                } else
-//                (visited[i] == 0 && adjMatrix[currenrt][i])
-                // !AorB를 넘겨서 두 집합을 바꿔가며
-                    dfs(i, !AorB);
+                }
+            }
         }
     }
 }
