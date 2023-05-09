@@ -3,7 +3,7 @@ package 스터디.정수론;
 import java.util.*;
 
 public class 문제37_소수_구하기 {
-    public static void main(String[] args) {
+    public  static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         int M = sc.nextInt();
