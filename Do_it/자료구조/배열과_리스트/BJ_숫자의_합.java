@@ -1,4 +1,4 @@
-package Do_it.자료구조;
+package Do_it.자료구조.배열과_리스트;
 import java.util.*;
 
 public class BJ_숫자의_합 {

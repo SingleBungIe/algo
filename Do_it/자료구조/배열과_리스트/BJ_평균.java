@@ -1,4 +1,4 @@
-package Do_it.자료구조;
+package Do_it.자료구조.배열과_리스트;
 
 import java.util.*;
 
@@ -16,9 +16,9 @@ public class BJ_평균 {
         int max = A[0];
 
         System.out.println(sum * 100.0 / max / N);
+        System.out.println(sum / max * 100.0 / N);
     }
 }
-
 
 /*
 80 / 80 * 100 + 60 / 80 * 100 + 40 / 80 * 100
