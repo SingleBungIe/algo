@@ -12,8 +12,7 @@ public class 삼각김밥_월드 {
     static int s_row = 0;
     static int s_col = 0;
     static int e = 0;
-    static int e_row = 0;
-    static int e_col = 0;
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -40,12 +39,6 @@ public class 삼각김밥_월드 {
                         s_row = i;
                         s_col = j;
                     }
-
-                    if (num == e) {
-                        e_row = i;
-                        e_col = j;
-                    }
-
                     num++;
                 }
             }
@@ -102,3 +95,4 @@ public class 삼각김밥_월드 {
 4,0    11  12  13  14  15
 
  */
+
