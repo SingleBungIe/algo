@@ -5,5 +5,7 @@ public class D2_2005_파스칼의_삼각형 {
         System.out.println("");
         System.out.println("");
         System.out.println("D2");
+        System.out.println("D2");
+        System.out.println("D2");
     }
 }
